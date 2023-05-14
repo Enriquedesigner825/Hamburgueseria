@@ -64,7 +64,7 @@ header .nav-top span {
     display: none;
 }
 
-header .nav {
+header nav {
     padding: 1.25em;
 }
 
@@ -89,7 +89,7 @@ header nav .hamburguesa div {
     margin-bottom: 0.625em;
 }
 
-header nav .figure {
+header nav figure {
     max-width: 6.25em;
 }
 
