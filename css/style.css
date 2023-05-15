@@ -121,7 +121,7 @@ header nav .menu li:last-child a {
 
     header .nav-top .container {
         display: flex;
-        justify-content: space-between;
+
     }
 }
 
