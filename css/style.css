@@ -76,7 +76,10 @@ header nav .container {
 
 header nav .menu {
     width: 100%;
+}
 
+header nav .menu .activa {
+    color: var(--colorprincipal);
 }
 
 header nav .hamburguesa {
@@ -154,7 +157,6 @@ footer a:hover {
 
     header .nav-top .container {
         display: flex;
-
     }
 
     footer {
