@@ -109,6 +109,39 @@ header nav .menu li:last-child a {
 
 /* Final del header */
 
+/* Inicio footer */
+
+footer {
+    background-color: var(--colorsecundario);
+    padding: 1.25em 0;
+    text-align: center;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 110%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--colorprincipal);
+}
+
+.flecha a {
+    display: block;
+    color: var(--colorprincipal);
+    font-size: 300%;
+    position: fixed;
+    bottom: 4.375rem;
+    right: 1.25rem;
+}
+
+/* Fin del footer */
+
 /* Inicio Mediaquerys */
 @media(min-width: 48em) {
     header .nav-top span {
@@ -122,6 +155,10 @@ header nav .menu li:last-child a {
     header .nav-top .container {
         display: flex;
 
+    }
+
+    footer {
+        text-align: left;
     }
 }
 
