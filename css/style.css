@@ -463,12 +463,9 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
 #menu .offers ul li {
     margin: 0.625em;
     color: white;
-
-
 }
 
 #menu .container .underline {
-
     width: 6.25rem;
     margin: -1.25em auto;
 }
@@ -479,19 +476,23 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
     text-align: left;
     margin-top: -2.1875em;
     margin-left: 1.5625em;
+
 }
 
+
 #menu figure {
+    height: 150px;
     margin: 0 auto;
-    width: 80%;
+    margin-top: 50px;
+    background-image: none;
 }
 
 #menu .menu .titulo {
     text-align: left;
-    margin-top: 100px;
-    margin-left: 50px;
-    padding-bottom: 20px;
+    margin: 0 auto;
+    padding-top: 50px;
 }
+
 
 #menu .menu .titulo span {
     color: white;
@@ -505,13 +506,13 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
 #menu .offers a {
     color: white;
     padding: 10px;
+
 }
 
 #menu .offers a:hover {
     background-color: var(--colorprincipal);
-
-
 }
+
 
 
 
@@ -605,24 +606,34 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
         width: 33.333%;
     }
 
+    #menu .container {
+        display: flex;
+    }
+
     #menu .wrapper {
         display: inline-block;
+    }
+
+    #menu .offers {
+        display: inline-block;
+        width: 60%;
 
     }
 
     #menu .menu article {
-        display: inline;
+        display: flex;
+        width: 100%;
+        padding-top: 10px;
+        padding-right: 50px;
     }
+
 
     #menu figure {
-
-        width: 30%;
+        height: 150px;
+        margin: 0 auto;
+        margin-top: 50px;
+        background-image: none;
+        padding: 20px;
     }
-
-    #menu .container {
-        display: block;
-    }
-
-
 
 }
