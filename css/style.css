@@ -257,7 +257,7 @@ footer a:hover {
     font-size: 1.15em;
 }
 
-.boton {
+.hero .boton {
     display: inline-block;
     background-color: var(--colorprincipal);
     padding: 1.15em;
@@ -430,6 +430,94 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
 
 /* Final about us */
 
+/* Inicio del menu */
+#menu p {
+    color: white;
+    text-align: left;
+    padding-top: 10px;
+}
+
+#menu .container {
+    background-color: var(--colorsecundario);
+    padding: var(--margingrid);
+    color: white;
+}
+
+#menu .container h2 {
+    color: var(--colorprincipal);
+}
+
+#menu .container h2 span {
+    color: white;
+
+}
+
+#menu .offers ul {
+    display: block;
+    list-style: none;
+    width: 100%;
+    margin: 3.125em 0.3125em;
+
+}
+
+#menu .offers ul li {
+    margin: 0.625em;
+    color: white;
+}
+
+#menu .container .underline {
+    width: 6.25rem;
+    margin: -1.25em auto;
+}
+
+
+#menu .container .today hr {
+    display: inline-block;
+    text-align: left;
+    margin-top: -2.1875em;
+    margin-left: 1.5625em;
+
+}
+
+
+#menu figure {
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-image: none;
+}
+
+#menu .menu .titulo {
+    text-align: left;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+
+#menu .menu .titulo span {
+    color: white;
+    text-align: left;
+}
+
+#menu .menu .titulo .boton {
+    text-align: left;
+}
+
+#menu .offers a {
+    color: white;
+    padding: 10px;
+
+}
+
+#menu .offers a:hover {
+    background-color: var(--colorprincipal);
+}
+
+
+
+
+/* Fin del menu */
+
 /* Inicio Mediaquerys */
 @media(min-width: 48em) {
     header .nav-top span {
@@ -518,6 +606,34 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
         width: 33.333%;
     }
 
+    #menu .container {
+        display: flex;
+    }
 
+    #menu .wrapper {
+        display: inline-block;
+    }
+
+    #menu .offers {
+        display: inline-block;
+        width: 60%;
+
+    }
+
+    #menu .menu article {
+        display: flex;
+        width: 100%;
+        padding-top: 10px;
+        padding-right: 50px;
+    }
+
+
+    #menu figure {
+        height: 150px;
+        margin: 0 auto;
+        margin-top: 50px;
+        background-image: none;
+        padding: 20px;
+    }
 
 }
