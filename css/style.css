@@ -30,6 +30,7 @@ html {
 .container {
     max-width: var(--anchomaximo);
     margin: 0 auto;
+
 }
 
 body {
@@ -46,7 +47,7 @@ header .nav-top {
 
 header .nav-top .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 header .nav-top a {
@@ -76,6 +77,7 @@ header nav .container {
 
 header nav .menu {
     width: 100%;
+    list-style: none;
 }
 
 header nav .menu .activa {
@@ -116,17 +118,96 @@ header nav .menu li:last-child a {
 
 /* Final del header */
 
+/* Inicio de la section */
+
+section .titulo h2 {
+    text-align: center;
+    color: var(--colorprincipal);
+    font-family: 'handlee', cursive;
+}
+
+section .titulo h2 span {
+    color: black;
+}
+
+section hr {
+    background-color: var(--colorprincipal);
+    width: 10%;
+}
+
+section .titulo p {
+    text-align: center;
+    position: relative;
+    top: -1.25em;
+    color: var(--colorprincipal);
+}
+
+section article figure {
+    width: 18.75em;
+    height: 12.5em;
+    background-image: url(../material_hamburgueseria/images/news3.jpg);
+    background-size: cover;
+}
+
+section article figure .cuadrado {
+    width: 4.0625em;
+    height: 4.0625em;
+    background-color: rgb(255, 99, 71, 0.7);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.25em;
+    padding-top: 1.25em;
+}
+
+section .articles {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+}
+
+section .articles article {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+section .articles .texto {
+    margin: 0.625em 3.4375em;
+}
+
+section h4,
+a {
+    color: var(--colorprincipal);
+    text-decoration: none;
+}
+
+section p {
+    color: gray;
+}
+
+section .reasons figure {
+    background-image: url(../material_hamburgueseria/images/news4.jpg);
+}
+
+section .restaurant figure {
+    background-image: url(../material_hamburgueseria/images/news1.jpg);
+}
+
+/* Fin de la section */
+
 /* Inicio footer */
 
 footer {
     background-color: var(--colorsecundario);
-    padding: 1.25em 0;
-    text-align: center;
+    padding: 0.375em 0;
     color: white;
     position: fixed;
     width: 100%;
     bottom: 0;
     font-size: 110%;
+
 }
 
 footer a {
@@ -143,7 +224,7 @@ footer a:hover {
     color: var(--colorprincipal);
     font-size: 300%;
     position: fixed;
-    bottom: 4.375rem;
+    bottom: 6.25rem;
     right: 1.25rem;
 }
 
@@ -152,7 +233,7 @@ footer a:hover {
 /* Inicio del hero */
 .hero {
     background-image: url(../material_hamburgueseria/images/fondo.jpg);
-    height: 60vh;
+    height: 70vh;
     background-size: cover;
     background-position: center center;
     background-blend-mode: multiply;
@@ -183,6 +264,7 @@ footer a:hover {
     color: white;
     text-decoration: none;
     border: 1px solid var(--colorprincipal);
+
 }
 
 .boton:hover {
@@ -195,8 +277,8 @@ footer a:hover {
     transform: translateX(5px);
 }
 
-.hero .container>div {
-    margin: var(--margingrid);
+.hero .container div {
+    margin: var(--margingrid) 0;
 }
 
 .hero .social {
@@ -204,13 +286,13 @@ footer a:hover {
     width: 10em;
     justify-content: space-between;
     list-style: none;
+    padding: 0;
 
 }
 
 .hero .social a {
     color: white;
     font-size: 2em;
-
 }
 
 .hero .container {
@@ -221,7 +303,7 @@ footer a:hover {
 
 /* Inicio our services */
 main section {
-    padding: 2.125em var(--margingrid);
+    padding: var(--margingrid);
 }
 
 main section h2 {
@@ -238,7 +320,9 @@ main section h2 span {
 main section .underline {
     position: relative;
     width: 6.25rem;
-    margin: 0 auto;
+    margin: -20px auto;
+
+
 }
 
 main section .underline hr {
@@ -254,11 +338,6 @@ main section .underline span {
     font-weight: 700;
 }
 
-main section .grid {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 main section:last-child {
     margin-bottom: 3em;
 }
@@ -266,6 +345,7 @@ main section:last-child {
 main #services article {
     border-bottom: 1px solid #aaa;
     padding: 1.5em 0;
+    width: 100%;
 }
 
 main #services article>div i {
@@ -302,6 +382,54 @@ main section .enlace {
 
 /* Fin del our services */
 
+/* Inicio about us */
+main #aboutus figure {
+    /* background-color: tomato;
+    width: 100%; */
+    height: 400px;
+}
+
+main #aboutus .grid>div {
+    /* background-color: violet;
+    height: 400px; */
+    width: 100%;
+    margin-top: 20px;
+}
+
+main #aboutus .grid h3 {
+    font-size: 110%;
+    font-weight: 700;
+}
+
+main #aboutus .grid h4 {
+    margin: var(--margingrid) 0;
+    color: var(--colorprincipal);
+}
+
+main #aboutus .imagen {
+    margin: 1.5em auto;
+    width: 93%;
+}
+
+main #aboutus .imagen .marco {
+    border: 3px solid var(--colorprincipal);
+    transform: rotateZ(10deg);
+    transition: 1s;
+}
+
+main #aboutus .imagen .marco img {
+    transform: rotateZ(-10deg);
+    transition: 1s;
+}
+
+main #aboutus .imagen:hover :is(.marco, .marco img) {
+    transform: rotateZ(0deg);
+}
+
+
+
+/* Final about us */
+
 /* Inicio Mediaquerys */
 @media(min-width: 48em) {
     header .nav-top span {
@@ -321,7 +449,7 @@ main section .enlace {
     }
 
     main #services article {
-        width: 50%;
+
         border-bottom: 0;
         border-left: 1px solid #aaa;
         padding: 1.5em;
@@ -331,7 +459,28 @@ main section .enlace {
     main #services article:last-child {
         width: 100%;
     }
+
+    main #aboutus figure,
+    main #aboutus .grid>div {
+        width: 50%;
+    }
+
+    main #aboutus .grid h3 {
+        margin-top: var(--margingrid);
+    }
+
+    main #aboutus .imagen {
+        margin: var(--margingrid) 0;
+
+    }
+
+    #aboutus .grid {
+        display: flex;
+    }
+
 }
+
+
 
 @media(min-width: 62.75em) {
     header nav .menu {
@@ -355,11 +504,20 @@ main section .enlace {
         padding: 0;
     }
 
-    main #services article {
+    main #services .grid {
+        display: flex;
+
+    }
+
+    #aboutus .grid {
+        display: flex;
+    }
+
+    section .articles article {
+
         width: 33.333%;
     }
 
-    main #services article:last-child {
-        width: 33.333%;
-    }
+
+
 }
